@@ -1,0 +1,188 @@
+inherited F_BaseSimples1: TF_BaseSimples1
+  Left = 379
+  Height = 357
+  Top = 229
+  Width = 558
+  ClientHeight = 357
+  ClientWidth = 558
+  inherited Panel1: TPanel
+    Width = 558
+  end
+  inherited PageControl1: TPageControl
+    Height = 262
+    Width = 558
+  end
+  inherited Panel2: TPanel
+    Height = 45
+    Top = 312
+    Width = 558
+    ClientHeight = 45
+    ClientWidth = 558
+    object Panel3: TPanel[0]
+      Left = 0
+      Height = 25
+      Top = 8
+      Width = 67
+      ClientHeight = 25
+      ClientWidth = 67
+      Color = 9527808
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+      object SpeedButton1: TSpeedButton
+        Cursor = crHandPoint
+        Left = 1
+        Height = 23
+        Top = 1
+        Width = 65
+        Action = act_btIncluir
+        Align = alClient
+        Flat = True
+        Font.Color = clWhite
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel4: TPanel[1]
+      Left = 70
+      Height = 25
+      Top = 9
+      Width = 72
+      ClientHeight = 25
+      ClientWidth = 72
+      Color = 9527808
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 1
+      object SpeedButton2: TSpeedButton
+        Cursor = crHandPoint
+        Left = 1
+        Height = 23
+        Top = 1
+        Width = 70
+        Action = act_btAlterar
+        Align = alClient
+        Flat = True
+        Font.Color = clWhite
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel5: TPanel[2]
+      Left = 146
+      Height = 25
+      Top = 10
+      Width = 71
+      ClientHeight = 25
+      ClientWidth = 71
+      Color = 9527808
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 2
+      object SpeedButton3: TSpeedButton
+        Cursor = crHandPoint
+        Left = 1
+        Height = 23
+        Top = 1
+        Width = 69
+        Action = act_btexcluir
+        Align = alClient
+        Flat = True
+        Font.Color = clWhite
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel6: TPanel[3]
+      Left = 224
+      Height = 25
+      Top = 10
+      Width = 72
+      ClientHeight = 25
+      ClientWidth = 72
+      Color = 9527808
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 3
+      object SpeedButton4: TSpeedButton
+        Cursor = crHandPoint
+        Left = 1
+        Height = 23
+        Top = 1
+        Width = 70
+        Action = act_btpesquisar
+        Align = alClient
+        Flat = True
+        Font.Color = clWhite
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel7: TPanel[4]
+      Left = 472
+      Height = 26
+      Top = 8
+      Width = 72
+      ClientHeight = 26
+      ClientWidth = 72
+      Color = 9527808
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 4
+      object SpeedButton5: TSpeedButton
+        Cursor = crHandPoint
+        Left = 8
+        Height = 22
+        Top = 1
+        Width = 56
+        Action = act_Sair
+        Flat = True
+        Font.Color = clWhite
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+  end
+  inherited ACBrEnterTab1: TACBrEnterTab
+    Left = 432
+    Top = 96
+  end
+  object ActionList1: TActionList[4]
+    Left = 368
+    Top = 96
+    object act_btIncluir: TAction
+      Caption = 'Incluir'
+    end
+    object act_btAlterar: TAction
+      Caption = 'Alterar'
+    end
+    object act_btexcluir: TAction
+      Caption = 'Excluir'
+    end
+    object act_btpesquisar: TAction
+      Caption = 'Pesquisar'
+    end
+    object act_Sair: TAction
+      Caption = 'Fechar'
+    end
+  end
+  object ds_base: TDataSource[5]
+    DataSet = Q_Base
+    Left = 384
+    Top = 158
+  end
+  object Q_Base: TZQuery[6]
+    Connection = DMPrincipal.ZCon
+    UpdateTransaction = DMPrincipal.ZTransaction1
+    Transaction = DMPrincipal.ZTransaction1
+    UpdateObject = up_Base
+    Params = <>
+    Left = 264
+    Top = 160
+  end
+  object up_Base: TZUpdateSQL[7]
+    UseSequenceFieldForRefreshSQL = False
+    Left = 320
+    Top = 158
+  end
+end

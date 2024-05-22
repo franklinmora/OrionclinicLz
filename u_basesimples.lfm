@@ -1,0 +1,51 @@
+object F_BaseSimples: TF_BaseSimples
+  Left = 268
+  Height = 372
+  Top = 30
+  Width = 447
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'F_BaseSimples'
+  ClientHeight = 372
+  ClientWidth = 447
+  Color = clWhite
+  Font.Style = [fsBold]
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 447
+    Align = alTop
+    Color = 9527808
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 286
+    Top = 50
+    Width = 447
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 36
+    Top = 336
+    Width = 447
+    Align = alBottom
+    ParentBackground = False
+    TabOrder = 2
+  end
+  object ACBrEnterTab1: TACBrEnterTab
+    EnterAsTab = True
+    Left = 248
+    Top = 120
+  end
+end
